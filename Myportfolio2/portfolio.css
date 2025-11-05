@@ -1,0 +1,120 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; /* Very light gray */
+}
+
+/* Header Styling */
+#header {
+    background-color: #007bff; /* Primary Blue */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#header h1 {
+    margin-bottom: 5px;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 5%; /* Adds padding on sides */
+    text-align: center;
+}
+
+section:nth-child(even) { /* Alternating background for better division */
+    background-color: #e9ecef;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* About Section Image */
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 25px;
+    border: 5px solid #007bff;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section List */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skills li {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Projects Section */
+#projects .project-item {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+/* Resume Button Styling */
+.resume-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #343a40; /* Dark gray */
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 600px) {
+    #skills ul {
+        flex-direction: column;
+    }
+    #skills li, #projects .project-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
