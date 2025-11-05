@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Standard calculator width */
+    overflow: hidden;
+}
+
+.calculator-display {
+    width: 100%;
+    height: 60px;
+    background-color: #222;
+    color: white;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 10px 15px;
+    border: none;
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+/* CSS Grid for button layout */
+.calculator-keys {
+    display: grid;
+    /* Create 4 columns of equal fractional width */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 1px;
+    background-color: green;
+}
+
+.calculator-keys button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0,128,0);
+    transition: background-color 0.2s;
+}
+
+.calculator-keys button:hover {
+    background-color: #eee;
+}
+
+.operator {
+    background-color: #f79d37;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e68a26;
+}
+
+.equal-sign {
+    background-color: #4CAF50;
+    color: white;
+    /* Make the equal sign span two rows */
+    grid-row: span 2; 
+}
+
+.equal-sign:hover {
+    background-color: #43a047;
+}
+
+.zero-button {
+    /* Optional: make the 0 button span two columns */
+    /* grid-column: span 2; */
+}

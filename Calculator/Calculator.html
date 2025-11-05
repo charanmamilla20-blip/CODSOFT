@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="calculator">
+        <input type="text" class="calculator-display" value="0" readonly>
+        
+        <div class="calculator-keys">
+            <button class="operator" data-action="clear">AC</button>
+            <button class="operator" data-action="divide">/</button>
+            <button class="operator" data-action="multiply">*</button>
+            <button class="operator" data-action="subtract">-</button>
+            
+            <button data-action="number">7</button>
+            <button data-action="number">8</button>
+            <button data-action="number">9</button>
+            
+            <button data-action="number">4</button>
+            <button data-action="number">5</button>
+            <button data-action="number">6</button>
+            
+            <button data-action="number">1</button>
+            <button data-action="number">2</button>
+            <button data-action="number">3</button>
+            
+            <button data-action="number" class="zero-button">0</button>
+            <button data-action="decimal">.</button>
+            
+            <button class="equal-sign" data-action="calculate">=</button>
+            <button class="operator" data-action="add">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
